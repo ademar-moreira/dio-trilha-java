@@ -20,8 +20,10 @@
 *.rar
 *.json
 *.vscode
+*.settings/org.eclipse*
+*.DS_Store*
+*.classpath*
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
-/.metadata/
