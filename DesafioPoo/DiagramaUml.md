@@ -2,7 +2,10 @@
 
 ```mermaid
 classDiagram
-class iPhone { - reprodutorMusical: ReprodutorMusical - telefone: Telefone - internetBrowser: InternetBrowser
+class iPhone {
+    - reprodutorMusical: ReprodutorMusical
+    - telefone: Telefone
+    - NavegadorInternet: NavegadorInternet
 
         + tocarMusica(String musica)
         + ligar(String number)
@@ -28,6 +31,6 @@ class iPhone { - reprodutorMusical: ReprodutorMusical - telefone: Telefone - int
     }
 
     iPhone --* ReprodutorMusical
-    iPhone --* Telephone
-    iPhone --* InternetBrowser
+    iPhone --* Telefone
+    iPhone --* NavegadorInternet
 ```
