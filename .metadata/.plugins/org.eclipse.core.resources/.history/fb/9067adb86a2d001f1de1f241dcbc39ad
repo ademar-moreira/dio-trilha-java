@@ -1,0 +1,26 @@
+package iPhone;
+
+public class iPhone {
+    private MusicPlayer musicPlayer;
+    private Telephone telephone;
+    private InternetBrowser internetBrowser;
+
+    public iPhone() {
+        this.musicPlayer = new MusicPlayer();
+        this.telephone = new Telephone();
+        this.internetBrowser = new InternetBrowser();
+    }
+
+    public void playMusic(String music) {
+        musicPlayer.selecionarMusica(music);
+        musicPlayer.tocar();
+    }
+
+    public void makeCall(String number) {
+        telephone.ligar(number);
+    }
+
+    public void browseInternet(String url) {
+        internetBrowser.exibirPagina(url);
+    }
+}

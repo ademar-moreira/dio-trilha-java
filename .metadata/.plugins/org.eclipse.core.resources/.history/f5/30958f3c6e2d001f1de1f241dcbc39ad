@@ -1,0 +1,11 @@
+package funcionalidades;
+
+public interface BrouserInternet {
+
+	void exibirPagina(String url);
+
+	void adicionarNovaAba();
+
+	void atualizarPagina();
+
+}

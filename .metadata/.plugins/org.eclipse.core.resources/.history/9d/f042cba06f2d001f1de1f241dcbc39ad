@@ -1,0 +1,26 @@
+package smartphones;
+
+public class iPhone implements ReprodutorMusical, Telefone, NavegadorInternet {
+    private ReprodutorMusical ReprodutorMusical;
+    private Telefone Telefone;
+    private NavegadorInternt NavegadorInternet;
+
+    public iPhone() {
+        this.ReprodutorMusical = new ReprodutorMusical();
+        this.Telefone = new Telefone();
+        this.NavegadorInternet = new NavegadorIntern();
+    }
+
+    public void playMusic(String music) {
+    	ReprodutorMusical.selecionarMusica(music);
+    	ReprodutorMusical.tocar();
+    }
+
+    public void makeCall(String number) {
+    	Telefone.ligar(number);
+    }
+
+    public void browseInternet(String url) {
+    	NavegadorInternet.exibirPagina(url);
+    }
+}
